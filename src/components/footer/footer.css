@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.mainContainer__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem;
+  margin: 0 auto;
+  width: auto;
+  z-index: 10;
+  background-color: white;
+  color: black;
+  font-family: "Host Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.mainContainer__text {
+  display: flex;
+  font-weight: 100;
+  flex-direction: row;
+  padding: 0.3rem;
+  gap: 1em;
+}
+
+.mainContainer__text--link {
+  text-decoration: none;
+  font-weight: 100;
+  color: black;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease-out;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainContainer__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.1rem;
+  }
+
+  .mainContainer__text--link {
+    &:active::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+  }
+}

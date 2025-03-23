@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.mainContainer__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: auto;
+  z-index: 10;
+  background-color: white;
+  color: black;
+  font-family: "Host Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.mainContainer__navbar--siteName {
+  font-weight: 100;
+  padding: 0.5rem;
+}
+
+.mainContainer__navbar--desktop--text {
+  display: flex;
+  font-weight: 100;
+  padding: 0.5rem;
+  gap: 1em;
+}
+
+.mainContainer__navbar--desktop--link {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-out;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+
+.mainContainer__navbar--mobile {
+  display: flex;
+  position: relative;
+  overflow-y: auto;
+  padding: 1rem;
+  height: 2rem;
+  width: 2rem;
+  box-sizing: content-box;
+}
+
+.mainContainer__navbar--mobile--sidebarTrigger {
+  display: flex;
+  height: 1.5rem;
+  width: 1.5rem;
+  border: 0.1rem solid black;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.mainContainer__navbar--mobile--sidebarTrigger--active {
+  align-self: center;
+  height: 1.5rem;
+  width: 1.5rem;
+  border: 0.1rem solid black;
+  background-color: black;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.mainContainer__navbar--mobile--sidebar {
+  position: fixed;
+  top: 0;
+  left: -17.1em;
+  width: 17em;
+  height: 100vh;
+  background-color: black;
+  filter: opacity(0.5);
+  color: white;
+  transition: left 0.5s ease-in-out;
+  z-index: 20;
+}
+
+.mainContainer__navbar--mobile--sidebar--open {
+  left: 0;
+}
+
+.mainContainer__navbar--mobile--list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.mainContainer__navbar--mobile--link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  font-size: 2em;
+  font-weight: 500;
+
+  &:first-child {
+    padding-top: 3em;
+  }
+
+  &:hover {
+    filter: blur(0.15rem);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mainContainer__navbar--mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainContainer__navbar--desktop {
+    display: none;
+  }
+}
