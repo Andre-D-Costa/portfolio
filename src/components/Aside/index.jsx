@@ -17,7 +17,7 @@ export default function Aside() {
         >
           {isOpen ? (
             <button className="mainContainer__navbar--mobile--sidebarTrigger--active">
-              " "
+              {" "}
             </button>
           ) : (
             " "
