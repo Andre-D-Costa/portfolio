@@ -31,7 +31,7 @@ export default function Aside() {
       >
         <ul className="mainContainer__navbar--mobile--list">
           <li>
-            <SidebarList items={["About", "Technologies", "Work"]} />
+            <SidebarList items={["About", "Technologies", "Projects"]} />
           </li>
         </ul>
       </aside>

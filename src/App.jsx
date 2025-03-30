@@ -3,6 +3,7 @@ import HomePage from "./pages/homepage/index.jsx";
 import Layout from "./components/layout";
 import AboutMe from "./pages/about/index.jsx";
 import Technologies from "./pages/technologies/index.jsx";
+import Projects from "./pages/projects/index.jsx";
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
           <Route path="/" element={<HomePage />}></Route>
           <Route path="/about" element={<AboutMe />}></Route>
           <Route path="/technologies" element={<Technologies />}></Route>
+          <Route path="/projects" element={<Projects />}></Route>
         </Route>
       </Routes>
     </BrowserRouter>

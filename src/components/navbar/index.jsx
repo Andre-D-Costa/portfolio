@@ -13,7 +13,7 @@ export default function NavBar() {
         </p>
         <div className="mainContainer__navbar--desktop">
           <h3 className="mainContainer__navbar--desktop--text">
-            <TagsList items={["About", "Technologies", "Work"]} />
+            <TagsList items={["About", "Technologies", "Projects"]} />
           </h3>
         </div>
         <Aside />
