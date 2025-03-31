@@ -21,7 +21,7 @@ export default function ProjectContainer() {
           onMouseLeave={handleMouseLeave}
         >
           <p className="projects--proj1">
-            sketches<p className="text2">sketches</p>
+            sketches<p className="text2">traditional</p>
           </p>
         </div>
       </div>
@@ -35,7 +35,7 @@ export default function ProjectContainer() {
           onMouseLeave={handleMouseLeave}
         >
           <p className="projects--proj1">
-            digital<p className="text2">digital</p>
+            sketches<p className="text2">digital</p>
           </p>
         </div>
       </div>
@@ -63,7 +63,7 @@ export default function ProjectContainer() {
           onMouseLeave={handleMouseLeave}
         >
           <p className="projects--proj1">
-            video<p className="text2">video</p>
+            video<p className="text2">performance</p>
           </p>
         </div>
       </div>

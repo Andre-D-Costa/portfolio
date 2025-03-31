@@ -16,7 +16,7 @@ export default function Projects() {
           navigate("/");
         }}
       >
-        ◄
+        ⇦
       </button>
     </div>
   );
