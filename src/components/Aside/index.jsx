@@ -1,12 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import SidebarList from "../SidebarList";
 
 export default function Aside() {
   const [isOpen, setIsOpen] = useState(false);
+  const sidebarRef = useRef(null);
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <>
@@ -25,6 +38,7 @@ export default function Aside() {
         </button>
       </div>
       <aside
+        ref={sidebarRef}
         className={`mainContainer__navbar--mobile--sidebar ${
           isOpen && "mainContainer__navbar--mobile--sidebar--open"
         }`}
