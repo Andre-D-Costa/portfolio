@@ -19,10 +19,11 @@
 }
 
 .mainContainer__projects--work {
+  display: inline;
   font-weight: 100;
-  /* color: white;
   background-color: black;
-  padding: 0.33rem; */
+  color: white;
+  padding: 0.33rem;
 }
 
 .projects__container {
@@ -58,7 +59,6 @@
   background-color: white;
   color: black;
   padding: 1em;
-  margin-left: 1.5rem;
 
   &:active {
     transform: scale(0.7);

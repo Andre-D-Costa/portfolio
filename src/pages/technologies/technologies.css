@@ -21,7 +21,11 @@
 }
 
 .mainContainer__technologies--tech {
+  display: inline;
   font-weight: 100;
+  background-color: black;
+  color: white;
+  padding: 0.33rem;
 }
 
 .mainContainer__technologies--textDesktop {

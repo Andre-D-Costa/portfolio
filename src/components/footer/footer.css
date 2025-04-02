@@ -91,7 +91,7 @@
 @media screen and (max-width: 768px) {
   .mainContainer__footer {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     gap: 0.33rem;
   }

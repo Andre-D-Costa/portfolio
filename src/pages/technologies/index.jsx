@@ -7,7 +7,9 @@ export default function Technologies() {
 
   return (
     <div id="techs" className="mainContainer__technologies">
-      <h2 className="mainContainer__technologies--tech">Tech</h2>
+      <span>
+        <h2 className="mainContainer__technologies--tech">Tech</h2>
+      </span>
       <p className="mainContainer__technologies--textDesktop">
         JavaScript/Vite/React/Photoshop/InDesign/Blender
       </p>
@@ -28,7 +30,7 @@ export default function Technologies() {
       <button
         className="btn__back"
         onClick={() => {
-          navigate("/");
+          navigate(-1);
         }}
       >
         ❮

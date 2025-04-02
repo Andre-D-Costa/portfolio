@@ -8,12 +8,14 @@ export default function Projects() {
 
   return (
     <div id="info" className="mainContainer__projects">
-      <h2 className="mainContainer__projects--work">Projects</h2>
+      <span>
+        <h2 className="mainContainer__projects--work">Projects</h2>
+      </span>
       <ProjectContainer />
       <button
         className="btn__back"
         onClick={() => {
-          navigate("/");
+          navigate(-1);
         }}
       >
         ❮

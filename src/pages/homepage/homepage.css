@@ -18,11 +18,25 @@ img {
   background-color: #f0f0f0;
 }
 
+.mainContainer__about--pic {
+  object-fit: contain;
+  align-self: self-end;
+  width: 30em;
+}
+
 .homepage__images--capitan {
   width: 100%;
   height: 100vh;
   object-fit: cover;
   grid-area: capitan;
+}
+
+.homepage__images--baloon {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  grid-area: baloon;
 }
 
 @media screen and (max-width: 1024px) {
@@ -34,5 +48,19 @@ img {
     align-items: center;
     width: auto;
     height: 100vh;
+  }
+
+  .mainContainer__about--pic {
+    object-fit: contain;
+    align-self: self-end;
+    width: 100%;
+  }
+
+  .homepage__images--baloon {
+    display: flex;
+  }
+
+  .homepage__images--capitan {
+    display: none;
   }
 }
