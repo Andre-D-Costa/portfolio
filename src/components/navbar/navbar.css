@@ -22,6 +22,7 @@
 .mainContainer__navbar--siteName {
   font-weight: 100;
   padding: 0.5rem;
+  cursor: pointer;
 }
 
 .mainContainer__navbar--desktop--text {
@@ -121,7 +122,7 @@
   font-weight: 500;
 
   &:first-child {
-    padding-top: 3em;
+    padding-top: 1em;
   }
 
   &:hover {

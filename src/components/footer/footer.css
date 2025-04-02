@@ -55,12 +55,45 @@
   }
 }
 
+.currentDate__format {
+  font-weight: 100;
+  color: white;
+  background-color: black;
+  padding: 0.33rem;
+}
+
+.mainContainer__footer--icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.mainContainer__footer--icon-git {
+  width: 2rem;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.mainContainer__footer--icon-linked {
+  width: 2rem;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.mainContainer__footer--icon-insta {
+  width: 2rem;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 768px) {
   .mainContainer__footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.1rem;
+    gap: 0.33rem;
   }
 
   .mainContainer__text--link {

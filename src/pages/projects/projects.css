@@ -20,6 +20,9 @@
 
 .mainContainer__projects--work {
   font-weight: 100;
+  /* color: white;
+  background-color: black;
+  padding: 0.33rem; */
 }
 
 .projects__container {
@@ -49,7 +52,7 @@
 }
 
 .btn__back {
-  margin-top: 25em;
+  margin-top: 5em;
   border: none;
   width: 5em;
   background-color: white;
@@ -63,6 +66,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .mainContainer__projects {
+    height: 100vh;
+  }
+
   .mainContainer__about--text {
     width: auto;
   }
