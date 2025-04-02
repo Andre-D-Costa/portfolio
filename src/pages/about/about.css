@@ -10,12 +10,10 @@
   flex-direction: column;
   margin: 0 auto;
   gap: 1em;
-  height: 100vh;
-  z-index: 10;
+  height: 100dvh;
   background-color: #f0f0f0;
   color: black;
   font-family: "Host Grotesk", sans-serif;
-  font-optical-sizing: auto;
   font-style: normal;
   padding: 1.5rem;
 }
@@ -30,8 +28,14 @@
 
 .mainContainer__about--text {
   display: flex;
-  width: 100vw;
+  width: 100%;
   font-weight: 100;
+}
+
+.mainContainer__about--pic {
+  object-fit: contain;
+  align-self: self-end;
+  width: 30em;
 }
 
 .btn__back {

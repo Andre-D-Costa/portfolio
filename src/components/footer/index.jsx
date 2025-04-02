@@ -17,7 +17,7 @@ export default function Footer() {
           className="mainContainer__footer--icon-linked"
           href="https://www.linkedin.com/in/andre-d-costa/"
         >
-          <h3 class="mainContainer__footer--linktext">LinkedIn</h3>
+          <h3 class="mainContainer__footer--text-linked">LinkedIn</h3>
           {/* <img src={linkedinicon} alt="LinkedIn_Icon" /> */}
         </a>
         <a
@@ -25,7 +25,7 @@ export default function Footer() {
           className="mainContainer__footer--icon-git"
           href="https://github.com/Andre-D-Costa"
         >
-          <h3 class="mainContainer__footer--linktext">GitHub</h3>
+          <h3 class="mainContainer__footer--text-git">GitHub</h3>
           {/* <img src={githubicon} alt="GitHub_Icon" /> */}
         </a>
         <a
@@ -33,7 +33,7 @@ export default function Footer() {
           className="mainContainer__footer--icon-insta"
           href="https://www.instagram.com/andred.costa/"
         >
-          <h3 class="mainContainer__footer--linktext">Instagram</h3>
+          <h3 class="mainContainer__footer--text-insta">Instagram</h3>
           {/* <img src={instagramicon} alt="Instagram_Icon" /> */}
         </a>
       </div>

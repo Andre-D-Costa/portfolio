@@ -71,10 +71,37 @@ a {
   gap: 2rem;
 }
 
-.mainContainer__footer--linktext {
-  color: black;
+.mainContainer__footer--text-linked {
+  color: #aeaeae;
   font-weight: 100;
   font-size: 1rem;
+  transition: color 0.75s ease;
+
+  &:hover {
+    color: black;
+  }
+}
+
+.mainContainer__footer--text-git {
+  color: #aeaeae;
+  font-weight: 100;
+  font-size: 1rem;
+  transition: color 0.75s ease;
+
+  &:hover {
+    color: black;
+  }
+}
+
+.mainContainer__footer--text-insta {
+  color: #aeaeae;
+  font-weight: 100;
+  font-size: 1rem;
+  transition: color 0.75s ease;
+
+  &:hover {
+    color: black;
+  }
 }
 
 /* .mainContainer__footer--icon-linked {

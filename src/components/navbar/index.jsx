@@ -19,7 +19,7 @@ export default function NavBar() {
           André Costa
         </h1>
         <p className="mainContainer__navbar--desktop mainContainer__navbar--desktop--text">
-          Thirty-four. Lisbon. -- Visual Arts. Creative Developer.
+          Thirty-four. Lisbon. — Visual Arts. Creative Developer.
         </p>
         <div className="mainContainer__navbar--desktop">
           <h3 className="mainContainer__navbar--desktop--text">
