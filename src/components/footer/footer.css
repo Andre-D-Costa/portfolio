@@ -5,6 +5,10 @@
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .mainContainer__footer {
   display: flex;
   justify-content: space-between;
@@ -64,17 +68,23 @@
 
 .mainContainer__footer--icons {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 }
 
-.mainContainer__footer--icon-git {
+.mainContainer__footer--linktext {
+  color: black;
+  font-weight: 100;
+  font-size: 1rem;
+}
+
+/* .mainContainer__footer--icon-linked {
   width: 2rem;
   height: 100%;
   object-fit: cover;
   cursor: pointer;
 }
 
-.mainContainer__footer--icon-linked {
+.mainContainer__footer--icon-git {
   width: 2rem;
   height: 100%;
   object-fit: cover;
@@ -86,7 +96,7 @@
   height: 100%;
   object-fit: cover;
   cursor: pointer;
-}
+} */
 
 @media screen and (max-width: 768px) {
   .mainContainer__footer {

@@ -17,21 +17,24 @@ export default function Footer() {
           className="mainContainer__footer--icon-linked"
           href="https://www.linkedin.com/in/andre-d-costa/"
         >
-          <img src={linkedinicon} alt="LinkedIn_Icon" />
+          <h3 class="mainContainer__footer--linktext">LinkedIn</h3>
+          {/* <img src={linkedinicon} alt="LinkedIn_Icon" /> */}
         </a>
         <a
           target="_blank"
           className="mainContainer__footer--icon-git"
           href="https://github.com/Andre-D-Costa"
         >
-          <img src={githubicon} alt="GitHub_Icon" />
+          <h3 class="mainContainer__footer--linktext">GitHub</h3>
+          {/* <img src={githubicon} alt="GitHub_Icon" /> */}
         </a>
         <a
           target="_blank"
           className="mainContainer__footer--icon-insta"
           href="https://www.instagram.com/andred.costa/"
         >
-          <img src={instagramicon} alt="Instagram_Icon" />
+          <h3 class="mainContainer__footer--linktext">Instagram</h3>
+          {/* <img src={instagramicon} alt="Instagram_Icon" /> */}
         </a>
       </div>
       <h4 className="mainContainer__text">
