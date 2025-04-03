@@ -15,11 +15,20 @@ export default function AboutMe() {
         Hello, I'm André, a 34 years old portuguese visual and digital artist
         and also a creative developer. Currently based in Lisbon.
       </p>
-      <img
-        className="mainContainer__about--pic"
-        src={selfportraitpic}
-        alt="self-portrait_1"
-      />
+      <div className="pics__container">
+        <img
+          title="What's happening?"
+          className="mainContainer__about--picStatic"
+          src={selfportraitpic}
+          alt="self-portrait_1"
+        />
+        <img
+          title="What's happening?"
+          className="mainContainer__about--pic"
+          src={selfportraitpic}
+          alt="self-portrait_1"
+        />
+      </div>
       <button
         className="btn__back"
         onClick={() => {

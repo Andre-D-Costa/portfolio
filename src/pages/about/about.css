@@ -32,10 +32,69 @@
   font-weight: 100;
 }
 
-.mainContainer__about--pic {
+.pics__container {
+  margin-right: -40em;
+  position: relative;
+  align-self: center;
+}
+
+.mainContainer__about--picStatic {
+  position: absolute;
   object-fit: contain;
-  align-self: self-end;
   width: 30em;
+  align-self: self-end;
+  border-radius: 25%;
+}
+
+.mainContainer__about--pic {
+  position: absolute;
+  object-fit: contain;
+  opacity: 0.5;
+  width: 30em;
+  align-self: self-end;
+  border-radius: 25%;
+  z-index: 100;
+  animation: translate1 4.4s cubic-bezier(0.23, 0.8, 0, -0.45) infinite normal
+      running,
+    translate2 4.4s cubic-bezier(0.23, 0.8, 0, -0.45) infinite normal running,
+    huechange 7s 4.4s cubic-bezier(0.23, 0.8, 0, -0.45) infinite normal running,
+    blur 4.4s cubic-bezier(0.23, 0.8, 0, -0.45) infinite normal running;
+}
+
+@keyframes translate1 {
+  25% {
+    transform: translateY(0.3rem);
+  }
+  50% {
+    transform: translateY(-0.2rem);
+  }
+}
+
+@keyframes translate2 {
+  25% {
+    transform: translateX(-0.1rem);
+  }
+  50% {
+    transform: translateX(0.4rem);
+  }
+}
+
+@keyframes huechange {
+  25% {
+    filter: hue-rotate(-98deg);
+  }
+  50% {
+    filter: hue-rotate(-77deg);
+  }
+}
+
+@keyframes blur {
+  25% {
+    filter: blur(0.07rem);
+  }
+  50% {
+    filter: blur(0.05rem);
+  }
 }
 
 .btn__back {
@@ -45,6 +104,7 @@
   background-color: white;
   color: black;
   padding: 1em;
+  cursor: pointer;
 
   &:active {
     transform: scale(0.7);

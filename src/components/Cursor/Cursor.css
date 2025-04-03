@@ -1,0 +1,20 @@
+body {
+  cursor: none;
+}
+
+.main__customCursor {
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background-color: white;
+  /* opacity: 0.33; */
+  pointer-events: none;
+  z-index: 1000;
+  mix-blend-mode: difference;
+}
+
+.invert {
+  filter: invert(1);
+  transition: filter 0.3s ease;
+}
