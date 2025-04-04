@@ -33,32 +33,30 @@
 }
 
 .pics__container {
-  margin-right: -40em;
+  display: flex;
   position: relative;
   align-self: center;
 }
 
 .mainContainer__about--picStatic {
-  position: absolute;
   object-fit: contain;
   width: 30em;
-  align-self: self-end;
-  border-radius: 25%;
+  border-radius: 0 0 25% 25%;
 }
 
 .mainContainer__about--pic {
   position: absolute;
   object-fit: contain;
-  opacity: 0.5;
   width: 30em;
-  align-self: self-end;
-  border-radius: 25%;
+  border-radius: 0 0 25% 25%;
+  opacity: 0.5;
   z-index: 100;
   animation: translate1 4.4s cubic-bezier(0.23, 0.8, 0, -0.45) infinite normal
       running,
     translate2 4.4s cubic-bezier(0.23, 0.8, 0, -0.45) infinite normal running,
-    huechange 7s 4.4s cubic-bezier(0.23, 0.8, 0, -0.45) infinite normal running,
-    blur 4.4s cubic-bezier(0.23, 0.8, 0, -0.45) infinite normal running;
+    huechange 7s 2s cubic-bezier(0.23, 0.8, 0, -0.45) infinite normal running,
+    blur 4.4s cubic-bezier(0.23, 0.8, 0, -0.45) infinite normal running,
+    skew 4.4s cubic-bezier(0.23, 0.8, 0, -0.45) infinite normal running;
 }
 
 @keyframes translate1 {
@@ -97,6 +95,15 @@
   }
 }
 
+@keyframes skew {
+  25% {
+    transform: skew(-1deg);
+  }
+  50% {
+    transform: skew(1deg);
+  }
+}
+
 .btn__back {
   margin-top: 5em;
   border: none;
@@ -114,5 +121,27 @@
 @media screen and (max-width: 768px) {
   .mainContainer__about--text {
     width: auto;
+  }
+
+  .pics__container {
+    display: flex;
+    position: relative;
+  }
+
+  .mainContainer__about--picStatic {
+    width: 75dvw;
+  }
+
+  .mainContainer__about--pic {
+    width: 75dvw;
+  }
+
+  @keyframes skew {
+    25% {
+      transform: skew(-5deg);
+    }
+    50% {
+      transform: skew(5deg);
+    }
   }
 }
