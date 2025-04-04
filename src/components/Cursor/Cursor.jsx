@@ -14,15 +14,27 @@ export default function Cursor() {
     };
 
     const handleWindowMouseEnter = () => {
-      setCursorStyle(true);
+      setCursorVisible(true);
     };
     const handleWindowMouseLeave = () => {
-      setCursorStyle(false);
+      setCursorVisible(false);
+    };
+    const handleMouseIn = (e) => {
+      if (e.relatedTarget || window.contains(e.relatedTarget)) {
+        setCursorVisible(true);
+      }
+    };
+    const handleMouseOut = (e) => {
+      if (!e.relatedTarget || !window.contains(e.relatedTarget)) {
+        setCursorVisible(false);
+      }
     };
 
     window.addEventListener("mousemove", moveCursor);
     window.addEventListener("mouseenter", handleWindowMouseEnter);
     window.addEventListener("mouseleave", handleWindowMouseLeave);
+    window.addEventListener("mouseout", handleMouseOut);
+    window.addEventListener("mouseover", handleMouseIn);
 
     const hasPointerCursor = (element) => {
       const style = window.getComputedStyle(element);
