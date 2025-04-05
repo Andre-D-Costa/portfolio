@@ -13,12 +13,6 @@ export default function Cursor() {
       });
     };
 
-    const handleWindowMouseEnter = () => {
-      setCursorVisible(true);
-    };
-    const handleWindowMouseLeave = () => {
-      setCursorVisible(false);
-    };
     const handleMouseIn = (e) => {
       if (e.relatedTarget || window.contains(e.relatedTarget)) {
         setCursorVisible(true);
@@ -31,8 +25,6 @@ export default function Cursor() {
     };
 
     window.addEventListener("mousemove", moveCursor);
-    window.addEventListener("mouseenter", handleWindowMouseEnter);
-    window.addEventListener("mouseleave", handleWindowMouseLeave);
     window.addEventListener("mouseout", handleMouseOut);
     window.addEventListener("mouseover", handleMouseIn);
 
@@ -59,8 +51,8 @@ export default function Cursor() {
 
     return () => {
       window.removeEventListener("mousemove", moveCursor);
-      window.removeEventListener("mouseenter", handleWindowMouseEnter);
-      window.removeEventListener("mouseleave", handleWindowMouseLeave);
+      window.removeEventListener("mouseout", handleMouseOut);
+      window.removeEventListener("mouseover", handleMouseIn);
 
       const elementsWithPointer = document.querySelectorAll("*");
       elementsWithPointer.forEach((element) => {
