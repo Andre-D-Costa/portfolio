@@ -8,8 +8,8 @@ export default function Cursor() {
   useEffect(() => {
     const moveCursor = (e) => {
       setCursorStyle({
-        left: e.clientX + window.scrollX - 16.5 + "px",
-        top: e.clientY + window.scrollY - 16.5 + "px",
+        left: e.clientX + window.scrollX - 20 + "px",
+        top: e.clientY + window.scrollY - 20 + "px",
       });
     };
 
@@ -25,8 +25,8 @@ export default function Cursor() {
     };
 
     window.addEventListener("mousemove", moveCursor);
-    window.addEventListener("mouseout", handleMouseOut);
     window.addEventListener("mouseover", handleMouseIn);
+    window.addEventListener("mouseout", handleMouseOut);
 
     const hasPointerCursor = (element) => {
       const style = window.getComputedStyle(element);

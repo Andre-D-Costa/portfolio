@@ -1,7 +1,9 @@
 import React from "react";
 import { useNavigate } from "react-router";
 import "./about.css";
-import selfportraitpic from "../../assets/IMG_8038_2.png";
+// import selfportraitpic from "../../assets/IMG_8038_2.png";
+import portraitone from "../../assets/IMG_8038_1.jpg";
+import portraittwo from "../../assets/IMG_8038_2.jpg";
 
 export default function AboutMe() {
   const navigate = useNavigate();
@@ -15,7 +17,21 @@ export default function AboutMe() {
         Hello, I'm André, a 34 years old portuguese visual and digital artist
         and also a creative developer. Currently based in Lisbon.
       </p>
-      <div className="pics__container">
+      <div className="profile_pics--container">
+        <img
+          title="What's happening?"
+          src={portraitone}
+          alt="self_portrait"
+          className="profile__pic--first"
+        />
+        <img
+          title="What's happening?"
+          src={portraittwo}
+          alt="self_portrait"
+          className="profile__pic--second"
+        />
+      </div>
+      {/* <div className="pics__container">
         <img
           title="What's happening?"
           className="mainContainer__about--picStatic"
@@ -28,7 +44,7 @@ export default function AboutMe() {
           src={selfportraitpic}
           alt="self-portrait_1"
         />
-      </div>
+      </div> */}
       <button
         className="btn__back"
         onClick={() => {

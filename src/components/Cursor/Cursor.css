@@ -4,8 +4,8 @@ body {
 
 .main__customCursor {
   position: absolute;
-  width: 33px;
-  height: 33px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: white;
   pointer-events: none;
