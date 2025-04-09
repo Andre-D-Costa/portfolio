@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router";
 import "./technologies.css";
+import { ChevronLeft } from "lucide-react";
 
 export default function Technologies() {
   const navigate = useNavigate();
@@ -33,7 +34,7 @@ export default function Technologies() {
           navigate(-1);
         }}
       >
-        ❮
+        <ChevronLeft />
       </button>
     </div>
   );

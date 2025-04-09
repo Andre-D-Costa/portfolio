@@ -2,6 +2,7 @@ import { React } from "react";
 import { useNavigate } from "react-router";
 import "./projects.css";
 import ProjectContainer from "../../components/ProjectContainer";
+import { ChevronLeft } from "lucide-react";
 
 export default function Projects() {
   const navigate = useNavigate();
@@ -18,7 +19,7 @@ export default function Projects() {
           navigate(-1);
         }}
       >
-        ❮
+        <ChevronLeft />
       </button>
     </div>
   );

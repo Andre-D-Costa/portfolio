@@ -45,7 +45,7 @@
   object-fit: cover;
   height: 20em;
   z-index: 3;
-  animation: display 3.5s infinite linear, hueChange 3.5s infinite linear;
+  animation: display 2000ms infinite linear, hueChange 2010ms infinite linear;
   box-sizing: content-box;
   border-right: 15rem solid white;
 }
@@ -75,7 +75,7 @@
   }
 
   100% {
-    filter: hue-rotate(-27deg);
+    filter: hue-rotate(-53deg);
   }
 }
 

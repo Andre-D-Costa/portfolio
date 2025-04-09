@@ -21,4 +21,8 @@ body {
   .main__customCursor {
     display: none;
   }
+
+  body {
+    cursor: auto;
+  }
 }

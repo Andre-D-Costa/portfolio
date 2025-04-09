@@ -5,6 +5,8 @@ import "./about.css";
 import portraitone from "../../assets/IMG_8038_1.jpg";
 import portraittwo from "../../assets/IMG_8038_2.jpg";
 
+import { ChevronLeft } from "lucide-react";
+
 export default function AboutMe() {
   const navigate = useNavigate();
 
@@ -51,7 +53,7 @@ export default function AboutMe() {
           navigate(-1);
         }}
       >
-        ❮
+        <ChevronLeft />
       </button>
     </div>
   );
