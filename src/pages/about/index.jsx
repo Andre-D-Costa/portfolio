@@ -17,7 +17,8 @@ export default function AboutMe() {
       </span>
       <p className="mainContainer__about--text">
         Hello, I'm André, a 34 years old portuguese visual and digital artist
-        and also a creative developer. Currently based in Lisbon.
+        and also a creative developer. From Lisbon and currently based in The
+        Hague.
       </p>
       <div className="profile_pics--container">
         <img
