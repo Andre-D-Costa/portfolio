@@ -11,6 +11,39 @@ body {
   pointer-events: none;
   z-index: 1000;
   mix-blend-mode: difference;
+  animation: borderRadius 1s infinite ease-in-out, rotate90 0.5s infinite linear;
+}
+
+@keyframes borderRadius {
+  0% {
+    border-radius: 0;
+  }
+
+  25% {
+    border-radius: 25%;
+  }
+  50% {
+    border-radius: 50%;
+  }
+  75% {
+    border-radius: 25%;
+  }
+  100% {
+    border-radius: 0;
+  }
+}
+
+@keyframes rotate90 {
+  0% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: none;
+  }
 }
 
 .main__customCursor--hidden {

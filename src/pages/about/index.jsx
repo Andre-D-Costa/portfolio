@@ -3,7 +3,7 @@ import { useNavigate } from "react-router";
 import "./about.css";
 // import selfportraitpic from "../../assets/IMG_8038_2.png";
 import portraitone from "../../assets/IMG_8038_1.jpg";
-import portraittwo from "../../assets/IMG_8038_2.jpg";
+import portraittwo from "../../assets/IMG_8038_4.jpg";
 
 import { ChevronLeft } from "lucide-react";
 
