@@ -30,7 +30,7 @@
 
 .mainContainer__technologies--textDesktop {
   display: flex;
-  width: 15em;
+  width: 100dvw;
   font-weight: 100;
 }
 

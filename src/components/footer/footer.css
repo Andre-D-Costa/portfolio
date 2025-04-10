@@ -68,62 +68,42 @@ a {
 
 .mainContainer__footer--icons {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
+  cursor: pointer;
 }
 
 .mainContainer__footer--text-linked {
   color: #aeaeae;
   font-weight: 100;
-  font-size: 1rem;
+  font-size: 2rem;
   transition: color 0.75s ease;
 
   &:hover {
-    color: black;
+    color: #0077b5;
   }
 }
 
 .mainContainer__footer--text-git {
   color: #aeaeae;
   font-weight: 100;
-  font-size: 1rem;
+  font-size: 2rem;
   transition: color 0.75s ease;
 
   &:hover {
-    color: black;
+    color: #000000;
   }
 }
 
 .mainContainer__footer--text-insta {
   color: #aeaeae;
   font-weight: 100;
-  font-size: 1rem;
+  font-size: 2rem;
   transition: color 0.75s ease;
 
   &:hover {
-    color: black;
+    color: #ff006f;
   }
 }
-
-/* .mainContainer__footer--icon-linked {
-  width: 2rem;
-  height: 100%;
-  object-fit: cover;
-  cursor: pointer;
-}
-
-.mainContainer__footer--icon-git {
-  width: 2rem;
-  height: 100%;
-  object-fit: cover;
-  cursor: pointer;
-}
-
-.mainContainer__footer--icon-insta {
-  width: 2rem;
-  height: 100%;
-  object-fit: cover;
-  cursor: pointer;
-} */
 
 @media screen and (max-width: 768px) {
   .mainContainer__footer {

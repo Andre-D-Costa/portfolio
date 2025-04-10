@@ -12,7 +12,7 @@ export default function Technologies() {
         <h2 className="mainContainer__technologies--tech">Tech</h2>
       </span>
       <p className="mainContainer__technologies--textDesktop">
-        JavaScript/Vite/React/Photoshop/InDesign/Blender
+        JavaScript / Vite / React / Photoshop / InDesign / Blender
       </p>
       <p className="mainContainer__technologies--textMobile">
         JavaScript

@@ -2,13 +2,10 @@ import React from "react";
 import "./footer.css";
 import CurrentDate from "../Date";
 
-import { Github } from "lucide-react";
-import { Linkedin } from "lucide-react";
-import { Instagram } from "lucide-react";
-
-import linkedinicon from "../../assets/linkedin2.png";
-import githubicon from "../../assets/share.png";
-import instagramicon from "../../assets/instagram2.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faSquareGithub } from "@fortawesome/free-brands-svg-icons";
+import { faSquareInstagram } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
   return (
@@ -22,10 +19,8 @@ export default function Footer() {
           href="https://www.linkedin.com/in/andre-d-costa/"
         >
           <h3 title="LinkedIn" class="mainContainer__footer--text-linked">
-            <Linkedin />
-            {/* LinkedIn */}
+            <FontAwesomeIcon icon={faLinkedin} />
           </h3>
-          {/* <img src={linkedinicon} alt="LinkedIn_Icon" /> */}
         </a>
         <a
           target="_blank"
@@ -33,10 +28,8 @@ export default function Footer() {
           href="https://github.com/Andre-D-Costa"
         >
           <h3 title="GitHub" class="mainContainer__footer--text-git">
-            <Github />
-            {/* GitHub */}
+            <FontAwesomeIcon icon={faSquareGithub} />
           </h3>
-          {/* <img src={githubicon} alt="GitHub_Icon" /> */}
         </a>
         <a
           target="_blank"
@@ -44,10 +37,8 @@ export default function Footer() {
           href="https://www.instagram.com/andred.costa/"
         >
           <h3 title="Instagram" class="mainContainer__footer--text-insta">
-            <Instagram />
-            {/* Instagram */}
+            <FontAwesomeIcon icon={faSquareInstagram} />
           </h3>
-          {/* <img src={instagramicon} alt="Instagram_Icon" /> */}
         </a>
       </div>
       <h4 title="Hi!" className="mainContainer__text">
